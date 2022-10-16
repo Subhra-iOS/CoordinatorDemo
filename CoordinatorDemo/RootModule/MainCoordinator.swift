@@ -22,7 +22,7 @@ class MainCoordinator: Coordinator {
 
     func showDetails() {
         let detailsViewController = DetailsViewController.instantiateFromStoryBoard()
-        detailsViewController.setParse(model: ParseModel(name: "Subhra"))
+        detailsViewController.setParse(model: ParseModel(name: "Subhra"), mainCoordinator: self)
         navigationController.pushViewController(detailsViewController, animated: true)
     }
 }
