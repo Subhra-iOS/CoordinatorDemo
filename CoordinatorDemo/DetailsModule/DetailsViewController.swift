@@ -12,7 +12,7 @@ class DetailsViewController: UIViewController, CoordinatorBoard {
     private var detailsCoordinator: DetailsCoordinator?
     private var parseModel: Decodable?
     weak private var mainCoordinator: Coordinator?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         detailsCoordinator = DetailsCoordinator(coordinator: mainCoordinator, parse: parseModel)
